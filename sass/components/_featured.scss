@@ -1,0 +1,43 @@
+.featured {
+
+  &__card {
+    height: 35rem;
+    position: relative;
+
+    &__image-container {
+      height: 100%;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__text-box {
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      background-color: $white;
+      padding: 2rem;
+      border: 1px solid $primary-light;
+      outline: 5px solid $white;
+      z-index: 10;
+
+      h4 {
+        color: $secondary;
+        font-weight: lighter;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        @include garamond;
+        color: $primary-light;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

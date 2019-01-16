@@ -3,13 +3,237 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i|Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,100i|Montserrat"
+              rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
 
         <title>Welford Bouquet</title>
         <link rel="shortcut icon" type="image/ico" href="img/title_ico.ico">
     </head>
     <body>
+        <!-- layout reference
+            <div class="row">
+                <div class="col-1-of-2"> col 1 of 1</div>
+                <div class="col-1-of-2"> col 1 of 1</div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3"> col 1 of 1</div>
+                <div class="col-1-of-3"> col 1 of 1</div>
+                <div class="col-1-of-3"> col 1 of 1</div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4"> col 1 of 1</div>
+                <div class="col-1-of-4"> col 1 of 1</div>
+                <div class="col-1-of-4"> col 1 of 1</div>
+                <div class="col-1-of-4"> col 1 of 1</div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3"> col 1 of 1</div>
+                <div class="col-2-of-3"> col 1 of 1</div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4"> col 1 of 1</div>
+                <div class="col-1-of-4"> col 1 of 1</div>
+                <div class="col-2-of-4"> col 1 of 1</div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4"> col 1 of 1</div>
+                <div class="col-3-of-4"> col 1 of 1</div>
+            </div> -->
+
+
+            <section class="page-title">
+                <h1>WELFORD BOUQUET</h1>
+            </section>
+
+
+            <nav class="navigation">
+                <div class="">
+                    <div class="row">
+
+                        <div class="col-1-of-6 navigation__search">
+
+                            <i class="fas fa-search navigation__search-icon"></i>
+                            <input type="text" id="search" title="search" class="navigation__search-input">
+                        </div>
+
+                        <div class="col-2-of-6 navigation__items">
+                            <ul>
+                                <li class="navigation__items__link"><a href="/#">HOME</a></li>
+                                <li class="navigation__items__link"><a href="/#">SHOP</a></li>
+                                <li class="navigation__items__link"><a href="/#">OUR STORY</a></li>
+                                <li class="navigation__items__link"><a href="/#">EXHIBITIONS</a></li>
+                                <li class="navigation__items__link"><a href="/#">COMISSIONS</a></li>
+                                <li class="navigation__items__link"><a href="/#">BLOG</a></li>
+                                <li class="navigation__items__link"><a href="/#">CONTACT</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-1-of-6 navigation__basket">
+                            <i class="fas fa-shopping-basket navigation__basket-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+            <section class="about ">
+
+                <div class="row">
+
+                    <div class="col-1-of-2 about__left"></div>
+
+                    <div class="col-1-of-2 about__right">
+
+                        <div class="about__right-text">
+                            <h4>Take a Look</h4>
+                            <h1>THE <br> WHITBY <br>RANGE</h1>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="featured ">
+                <div class="row">
+                    <div class="col-1-of-3 featured__card  featured__card-making">
+
+                        <div class="featured__card__image-container">
+                            <img src="./img/thomas-ae-602202-unsplash.jpg" alt="red flower bouquet">
+                        </div>
+
+                        <div class="featured__card__text-box">
+                            <h4 class="uppercase">THE MAKING</h4>
+                            <p>Our yarn is 100% British.</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3 featured__card  featured__card-story">
+
+                        <div class="featured__card__image-container">
+                            <img src="./img/beatriz-perez-moya-191993-unsplash.jpg" alt="colored flower bouquet">
+                        </div>
+
+                        <div class="featured__card__text-box">
+                            <h4 class="uppercase">OUR STORY</h4>
+                            <p>A family run business.</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3 featured__card  featured__card-comissions">
+
+                        <div class="featured__card__image-container">
+                            <img src="./img/tom-the-photographer-651516-unsplash.jpg" alt="roze flower bouquet">
+                        </div>
+
+                        <div class="featured__card__text-box">
+                            <h4 class="uppercase">COMISSIONS</h4>
+                            <p>Furnishing & upholstery.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products">
+
+                <div class="products__title">
+                    <h4 class="uppercase">OUR FAVORITES</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="products__items">
+                    <div class="row">
+
+                        <div class="col-1-of-4 products__items__item">
+
+                            <div class="sale"></div>
+
+                            <div class="products__items__item-image-container">
+                                <img src="./img/monika-grabkowska-664428-unsplash.jpg" alt="monika grabkowska flower">
+                            </div>
+
+                            <div class="products__items__item-info">
+                                <h5 class="uppercase">WEST CLIFF</h5>
+                                <p><span class="old-price">£290.00</span> <span
+                                        class="new-price">£250.00</span></p>
+                            </div>
+
+                        </div>
+
+                        <div class="col-1-of-4 products__items__item">
+
+                            <div class="products__items__item-image-container">
+                                <img src="./img/tanalee-youngblood-344759-unsplash.jpg" alt="tanalee youngblood flower">
+                            </div>
+
+                            <div class="products__items__item-info">
+                                <h5 class="uppercase">WEST CLIFF</h5>
+                                <p>£110.00</p>
+                            </div>
+
+                        </div>
+                        <div class="col-1-of-4 products__items__item">
+
+                            <div class="products__items__item-image-container">
+                                <img src="./img/alexandra-gorn-328026-unsplash.jpg" alt="alexandra gorn flower">
+                            </div>
+
+                            <div class="products__items__item-info">
+                                <h5 class="uppercase">WEST CLIFF</h5>
+                                <p>£360.00</p>
+                            </div>
+
+                        </div>
+
+                        <div class="col-1-of-4  products__items__item">
+
+                            <div class="products__items__item-image-container">
+                                <img src="./img/christie-kim-769380-unsplash.jpg" alt="christie kim flower">
+                            </div>
+
+                            <div class="products__items__item-info">
+                                <h5 class="uppercase">WEST CLIFF</h5>
+                                <p>£250.00</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <section class="footer__info">
+                    <ul>
+                        <li class="footer__info-item uppercase"><a href="/#">FAQ</a></li>
+                        <li class="footer__info-item uppercase"><a href="/#">DELIVERY & RETURNS</a></li>
+                        <li class="footer__info-item uppercase"><a href="/#">TERMS & CONDITIONS</a></li>
+                        <li class="footer__info-item uppercase"><a href="/#">CONTACT US</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer__social">
+                    <ul>
+                        <li><a href="/#" class="footer__social-item fab fa-twitter"></a></li>
+                        <li><a href="/#" class="footer__social-item fab fa-facebook"></a></li>
+                        <li><a href="/#" class="footer__social-item fab fa-instagram"></a></li>
+                    </ul>
+                </section>
+
+                <section class="footer__copyright">
+                    <h5 class="uppercase">COPYRIGHT 2017</h5>
+                    <p>Made in Yorkshire.</p>
+                </section>
+
+            </footer>
+
 
     </body>
 </html>

@@ -1,0 +1,63 @@
+.footer {
+
+  &__info {
+    border-top: 1px solid $primary-lighter;
+    border-bottom: 1px solid $primary-lighter;
+    margin: 2.5rem auto;
+    padding: 1rem 0;
+
+    &-item {
+      @include inline(5rem);
+      color: $primary-light;
+    }
+  }
+
+  &__social {
+    margin: 2rem auto;
+
+    li {
+      @include inline(5rem);
+    }
+
+    &-item {
+      position: relative;
+      color: $secondary;
+      border-radius: 50%;
+      border: 0.6px solid $primary-lighter;
+      transition: all .25s linear;
+      padding: 2.2rem;
+      margin: 3rem 0;
+
+      &::before {
+        font-size: 1.7rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+      }
+
+      &:hover {
+        color: $white;
+        background-color: $secondary;
+        border: 0.6px solid transparent;
+      }
+    }
+  }
+
+  &__copyright {
+    margin-bottom: 15rem;
+
+    h5 {
+      color: $primary-light;
+      font-weight: lighter;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      @include garamond;
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
+
+}

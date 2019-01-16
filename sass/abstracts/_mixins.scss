@@ -1,0 +1,19 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both
+  }
+}
+
+@mixin inline($margin-right) {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: $margin-right;
+  }
+}
+
+@mixin garamond {
+  font-family: 'Cormorant Garamond', serif;
+}

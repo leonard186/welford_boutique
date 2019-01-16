@@ -8,4 +8,14 @@
 @import 'base/typography';
 @import 'base/utilities';
 
+@import 'layout/grid';
+
 @import 'pages/home';
+
+//components
+@import 'components/page-title';
+@import 'components/navigation';
+@import 'components/about';
+@import 'components/featured';
+@import 'components/products';
+@import 'components/footer';

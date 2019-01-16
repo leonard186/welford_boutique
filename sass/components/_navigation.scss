@@ -1,0 +1,48 @@
+.navigation {
+
+  border-bottom: 1px solid $primary-lighter;
+  padding-bottom: 1rem;
+
+  &__search {
+    display: table;
+
+    &-input {
+      display: table-cell;
+      padding: .1rem .3rem;
+      width: 100%;
+      border: none;
+      height: 2rem;
+      position: relative;
+      transition: border-bottom-color .25s linear;
+
+      &:focus {
+        border-bottom: 2px solid $secondary;
+      }
+    }
+
+    &-icon {
+      display: table-cell;
+      font-size: 2rem;
+    }
+  }
+
+  &__items {
+
+    &__link {
+      @include inline(2rem);
+
+      a {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__basket {
+    @include clearfix;
+
+    &-icon {
+      float: right;
+      font-size: 2rem;
+    }
+  }
+}
