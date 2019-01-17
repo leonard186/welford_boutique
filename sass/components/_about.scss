@@ -1,6 +1,14 @@
 .about {
-
   margin: 2rem auto;
+
+    @media only screen and (max-width: 950px) {
+      .row { padding: 0; }
+      margin-top: 0;
+  }
+
+  @media only screen and(max-width: 780px) {
+   margin-top: 5rem;
+  }
 
   &__left,
   &__right {
@@ -13,6 +21,9 @@
       background-repeat:no-repeat;
       background-size: cover;
       background-position:center;
+      @media only screen and (max-width: 950px) {
+        display: none;
+      }
   }
 
     &__right {
@@ -41,6 +52,11 @@
           margin: 3rem;
           position: relative;
           letter-spacing: 10px;
+
+          @media only screen and (max-width: 450px) {
+            font-size: 4.5rem;
+            line-height: 1.2;
+          }
 
           &::after {
             position: absolute;

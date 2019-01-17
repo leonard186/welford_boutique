@@ -9,6 +9,16 @@
     &-item {
       @include inline(5rem);
       color: $primary-light;
+
+      @media only screen and (max-width: 850px) {
+        @include inline(3rem);
+      }
+
+      @media only screen and (max-width: 850px) {
+        display: block;
+        margin: 2rem 0;
+      }
+
     }
   }
 
@@ -23,7 +33,7 @@
       position: relative;
       color: $secondary;
       border-radius: 50%;
-      border: 0.6px solid $primary-lighter;
+      border: 1px solid $primary-lighter;
       transition: all .25s linear;
       padding: 2.2rem;
       margin: 3rem 0;
@@ -39,13 +49,13 @@
       &:hover {
         color: $white;
         background-color: $secondary;
-        border: 0.6px solid transparent;
+        border: 1px solid transparent;
       }
     }
   }
 
   &__copyright {
-    margin-bottom: 15rem;
+    margin-bottom: 13rem;
 
     h5 {
       color: $primary-light;

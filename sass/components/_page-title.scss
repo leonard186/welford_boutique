@@ -5,4 +5,8 @@
   h1 {
     font-size: 1.7rem;
   }
+
+  @media only screen and (max-width: 780px) {
+    display: none;
+  }
 }

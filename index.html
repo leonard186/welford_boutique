@@ -52,18 +52,19 @@
                 <h1>WELFORD BOUQUET</h1>
             </section>
 
-
             <nav class="navigation">
-                <div class="">
+
+                <div class="navigation__desktop">
+
                     <div class="row">
 
                         <div class="col-1-of-6 navigation__search">
-
-                            <i class="fas fa-search navigation__search-icon"></i>
+                            <img src="./img/search.png" alt="shopping basket" class="navigation__search-icon">
                             <input type="text" id="search" title="search" class="navigation__search-input">
                         </div>
 
                         <div class="col-2-of-6 navigation__items">
+
                             <ul>
                                 <li class="navigation__items__link"><a href="/#">HOME</a></li>
                                 <li class="navigation__items__link"><a href="/#">SHOP</a></li>
@@ -73,12 +74,59 @@
                                 <li class="navigation__items__link"><a href="/#">BLOG</a></li>
                                 <li class="navigation__items__link"><a href="/#">CONTACT</a></li>
                             </ul>
+
                         </div>
 
                         <div class="col-1-of-6 navigation__basket">
-                            <i class="fas fa-shopping-basket navigation__basket-icon"></i>
+                            <img src="./img/basket.png" alt="shopping basket" class="navigation__basket-icon">
                         </div>
                     </div>
+                </div>
+
+                <div class="navigation__mobile">
+
+                    <div class="navigation__mobile__menu">
+
+                        <div class="navigation__mobile__menu__button">
+
+                            <input type="checkbox" id="navi-toggle" class="navigation__mobile__menu__button-checkbox">
+
+                            <label for="navi-toggle" class="navigation__mobile__menu__button-btn">
+                                <span class="navigation__mobile__menu__button-btn-icon"></span>
+                            </label>
+
+                            <div class="navigation__mobile__list">
+                                <ul>
+
+                                    <li class="navigation__mobile__list-item navigation__search">
+                                        <img src="./img/search.png" alt="shopping basket" class="navigation__search-icon">
+                                        <input type="text" title="search" class="navigation__search-input">
+                                    </li>
+                                    <li class="navigation__mobile__list-item"><a href="/#">HOME</a></li>
+                                    <li class="navigation__mobile__list-item"><a href="/#">SHOP</a></li>
+                                    <li class="navigation__mobile__list-item"><a href="/#">OUR STORY</a></li>
+                                    <li class="navigation__mobile__list-item"><a href="/#">EXHIBITIONS</a></li>
+                                    <li class="navigation__mobile__list-item"><a href="/#">COMISSIONS</a></li>
+                                    <li class="navigation__mobile__list-item"><a href="/#">BLOG</a></li>
+                                    <li class="navigation__mobile__list-item"><a href="/#">CONTACT</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="navigation__mobile__menu__title">
+                            <h1>WELFORD BOUQUET</h1>
+                        </div>
+
+                        <div class="navigation__mobile__menu__basket">
+                            <div class="navigation__basket">
+                                <img src="./img/basket.png" alt="shopping basket" class="navigation__basket-icon">
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </nav>
 
@@ -105,7 +153,7 @@
 
             <section class="featured ">
                 <div class="row">
-                    <div class="col-1-of-3 featured__card  featured__card-making">
+                    <div class="col-1-of-3 featured__card">
 
                         <div class="featured__card__image-container">
                             <img src="./img/thomas-ae-602202-unsplash.jpg" alt="red flower bouquet">
@@ -116,7 +164,7 @@
                             <p>Our yarn is 100% British.</p>
                         </div>
                     </div>
-                    <div class="col-1-of-3 featured__card  featured__card-story">
+                    <div class="col-1-of-3 featured__card">
 
                         <div class="featured__card__image-container">
                             <img src="./img/beatriz-perez-moya-191993-unsplash.jpg" alt="colored flower bouquet">
@@ -127,7 +175,7 @@
                             <p>A family run business.</p>
                         </div>
                     </div>
-                    <div class="col-1-of-3 featured__card  featured__card-comissions">
+                    <div class="col-1-of-3 featured__card">
 
                         <div class="featured__card__image-container">
                             <img src="./img/tom-the-photographer-651516-unsplash.jpg" alt="roze flower bouquet">
@@ -174,7 +222,7 @@
                             </div>
 
                             <div class="products__items__item-info">
-                                <h5 class="uppercase">WEST CLIFF</h5>
+                                <h5 class="uppercase">ESK</h5>
                                 <p>£110.00</p>
                             </div>
 
@@ -186,7 +234,7 @@
                             </div>
 
                             <div class="products__items__item-info">
-                                <h5 class="uppercase">WEST CLIFF</h5>
+                                <h5 class="uppercase">SANDSEND</h5>
                                 <p>£360.00</p>
                             </div>
 
@@ -199,7 +247,7 @@
                             </div>
 
                             <div class="products__items__item-info">
-                                <h5 class="uppercase">WEST CLIFF</h5>
+                                <h5 class="uppercase">WEST CLIFF CUSHION</h5>
                                 <p>£250.00</p>
                             </div>
 
