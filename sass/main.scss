@@ -1,16 +1,14 @@
+//abstracts
 @import 'abstracts/variables';
-@import 'abstracts/functions';
 @import 'abstracts/mixins';
 
-
+//base
 @import 'base/base';
-@import 'base/animation';
 @import 'base/typography';
 @import 'base/utilities';
 
+//layout
 @import 'layout/grid';
-
-@import 'pages/home';
 
 //components
 @import 'components/page-title';

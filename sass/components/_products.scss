@@ -1,5 +1,7 @@
+//products section
 .products {
 
+  //products introduction
   &__title {
     margin: 8rem auto;
 
@@ -17,6 +19,7 @@
     }
   }
 
+  //product items
   &__items {
 
     &__item {
@@ -32,6 +35,7 @@
         }
       }
 
+      //product information
       &-info {
         margin: 2rem;
 
@@ -46,6 +50,4 @@
       }
     }
   }
-
-
 }

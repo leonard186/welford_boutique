@@ -1,15 +1,19 @@
+//define row
 .row {
   max-width: $grid-width;
   position: relative;
   margin: 0 auto;
   padding: 0 1rem;
 
+  //exclude last child element
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
   }
 
+  //clear float
   @include clearfix;
 
+  //target all elements that start with 'col-'
   [class^='col-'] {
     float: left;
     &:not(:last-child) {
@@ -21,46 +25,57 @@
     }
   }
 
+  //define column structures
+
+  //col structure: takes 50% of parent width
   .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal}) / 2);
 
+    //responsive styling
     @media only screen and (max-width: 950px) {
       width: 100%;
     }
   }
 
+  //col structure: takes 33% of parent width
   .col-1-of-3 {
     width: calc((100% - (#{$gutter-horizontal} * 2)) / 3);
+
+    //target microsoft edge
+    @supports (-ms-ime-align: auto) {
+      width: calc(33% - 1.1rem);
+    }
   }
 
+  //col structure: takes 25% of parent width
   .col-1-of-4 {
     width: calc((100% - (#{$gutter-horizontal} * 3)) / 4);
+
+    //target ie8+ browsers
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      width: calc((100% - (#{$gutter-horizontal} * 4)) / 4);
+    }
+
+    //responsive styling
     @media only screen and (max-width: 850px) {
       width: calc((100% - (#{$gutter-horizontal} * 2)) / 2);
       right: -1rem;
     }
   }
 
+  //col structure: takes 16% of parent width
   .col-1-of-6 {
     width: calc((100% - (#{$gutter-horizontal} * 5)) / 6);
   }
 
-  .col-2-of-3 {
-    width: calc(2 * ((100% - (#{$gutter-horizontal} * 2)) / 3) + #{$gutter-horizontal})
-  }
-
-  .col-2-of-4 {
-    width: calc(((100% - (#{$gutter-horizontal} * 3)) / 4) * 2 + #{$gutter-horizontal});
-  }
-
+  //col structure: takes 80% of parent width
   .col-2-of-6 {
     width: calc(((100% - (#{$gutter-horizontal} * 6)) / 3) * 2 + (3 * #{$gutter-horizontal}));
   }
 
-  .col-3-of-4 {
-    width: calc(((100% - (#{$gutter-horizontal} * 3)) / 4)  * 3 + (#{$gutter-horizontal} * 2));
-  }
 
+
+  //responsive styling
   @media only screen and (max-width: 650px) {
     .col-1-of-4,
     .col-1-of-3 {

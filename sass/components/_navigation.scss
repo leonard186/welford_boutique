@@ -1,7 +1,9 @@
+//navigation section
 .navigation {
   border-bottom: 1px solid $primary-lighter;
   padding-bottom: 1rem;
 
+  //responsive styling
   @media only screen and (max-width: 780px) {
     position: fixed;
     top: 0;
@@ -13,12 +15,13 @@
     background-color: $white;
   }
 
+  //desktop version
   &__desktop {
-    @media only screen and (max-width: 780px) {
-      display: none;
-    }
+    //responsive styling
+    @media only screen and (max-width: 780px) { display: none; }
   }
 
+  //search bar
   &__search {
     position: relative;
 
@@ -43,11 +46,13 @@
     }
   }
 
+  //navigation links
   &__items {
 
     &__link {
       @include inline(2rem);
 
+      //responsive styling
       @media only screen and(max-width: 1120px) {
         margin-bottom: 1rem;
         font-size: 1rem;
@@ -59,6 +64,7 @@
     }
   }
 
+  //shopping basket
   &__basket {
     @include clearfix;
 
@@ -68,8 +74,10 @@
     }
   }
 
+  //mobile version
   &__mobile {
 
+    //responsive styling
     @media only screen and (min-width: 780px) {
       display: none;
     }
@@ -80,10 +88,12 @@
       background-color: $white;
       padding-top: 2rem;
 
+      //button and menu items
       &__button {
 
+        //button functionality
         &-checkbox {
-            display: none;
+          display: none;
         }
 
         &-checkbox:checked ~ .navigation__mobile__list {
@@ -104,6 +114,7 @@
           transform: rotate(-135deg);
         }
 
+        //button style
         &-btn {
           top: -3px;
           position: relative;
@@ -135,16 +146,22 @@
               transition: all 0.3s cubic-bezier(.86, 0, 0.07, 1);
             }
 
-            &::before {top: -8px;}
-            &::after {top: 8px;}
+            &::before {
+              top: -8px;
+            }
+            &::after {
+              top: 8px;
+            }
           }
         }
       }
 
+      //mobile navigation title
       &__title {
         line-height: 1;
         font-size: 1.4rem;
 
+        //responsive styling
         @media only screen and (max-width: 400px) {
           h1 {
             font-size: 1.3rem;
@@ -154,6 +171,7 @@
       }
     }
 
+    //list items
     &__list {
       position: absolute;
       width: 100%;

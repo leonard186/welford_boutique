@@ -2,15 +2,19 @@
   text-transform: uppercase;
 }
 
+//reusable old price style
 .old-price {
   color: $primary-dark;
   text-decoration: line-through;
 }
 
+//reusable new price style
 .new-price {
   color: $new-price;
 }
 
+
+//reusable sale tag
 .sale {
   @include garamond;
   font-style: italic;
